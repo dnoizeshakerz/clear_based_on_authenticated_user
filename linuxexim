@@ -1,0 +1,12 @@
+if [ "$#" -lt "1" ];then
+        echo "Must specify the email address"
+        exit;
+fi
+
+USER=$@
+
+
+       	find /var/spool/exim/input -name "*-H" -exec grep -q "\-auth_id $USER" {} \; -print | while read MSG; do exim -Mrm $(basename ${MSG%-H});
+
+done
+
