@@ -1,3 +1,6 @@
+#Created by Azlan-SF. This script is for removing emails in the EXIM email queue, on Cpane/Directadmin server running EXIM mail server, for a compromised email account.
+#The script will remove emails in the EXIM email queue based on the authenticating (compromised) email account.
+
 if [ "$#" -lt "1" ];then
         echo "Must specify the email address"
         exit;
