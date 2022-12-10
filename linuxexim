@@ -1,4 +1,4 @@
-#Created by Azlan-SF. This script is for removing emails in the EXIM email queue, on Cpanel/Directadmin server running EXIM mail server, for a compromised email account.
+#Created by Azlan. This script is for removing emails in the EXIM email queue, on Cpanel/Directadmin server running EXIM mail server, for a compromised email account.
 #The script will remove emails in the EXIM email queue based on the authenticating (compromised) email account.
 
 if [ "$#" -lt "1" ];then
